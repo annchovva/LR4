@@ -32,7 +32,7 @@ int get_input()
 }
 
 //Функция для переворота
-void revers(double *a, int i, int j) {
+void reverse(double *a, int i, int j) {
     while (i < j) {
         int rev = a[i]; 
         a[i] = a[j];
@@ -86,9 +86,9 @@ void result() {
         while (std::cin.get() != '\n');
     }
     
-    revers (arr, 0, k-1);
-    revers (arr, 0, n-1);
-    revers (arr, n, k-1);
+    reverse (arr, 0, k-1);
+    reverse (arr, 0, n-1);
+    reverse (arr, n, k-1);
 
     std::cout << "Полученный массив: " << std::endl;
     for (int i = 0; i < k; i++) {
